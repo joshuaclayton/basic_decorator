@@ -81,7 +81,7 @@ end
 ```
 
 If a method isn't defined on the decorator, it gets delegated to the
-`@component` (via `method_missing`, meaning it'll keep your decorators nice
+`@component` (via `method_missing`), meaning it'll keep your decorators nice
 and thin; only define the methods of whom you want to change the behavior.
 
 `Sugar` and `Cream` may decorate `Coffee` any number of times.
