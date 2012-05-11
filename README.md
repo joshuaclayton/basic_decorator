@@ -8,6 +8,9 @@ blog](http://robots.thoughtbot.com/post/14825364877/evaluating-alternative-decor
 
 ## Installation
 
+Make sure you're running Ruby 1.9 (`BasicDecorator::Decorator`, the meat and
+potatoes of the gem, inherits from Ruby's `BasicObject`, which is 1.9+).
+
 Add this line to your application's Gemfile:
 
     gem 'basic_decorator'
