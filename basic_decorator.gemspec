@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ['Josh Clayton']
   gem.email         = ['joshua.clayton@gmail.com']
   gem.description   = %q{Decoration in Ruby should be easy}
-  gem.description   = %q{Decoration in Ruby should be easy. With BasicDecorator, it is.}
+  gem.summary       = %q{Decoration in Ruby should be easy. With BasicDecorator, it is.}
   gem.homepage      = 'https://github.com/joshuaclayton/basic_decorator'
 
   gem.files         = `git ls-files`.split($\)
