@@ -1,5 +1,7 @@
 # BasicDecorator
 
+[![Build Status](https://secure.travis-ci.org/joshuaclayton/basic_decorator.png?branch=master)](http://travis-ci.org/joshuaclayton/basic_decorator)
+
 Decoration in Ruby should be easy. With `BasicDecorator`, it is.
 
 `BasicDecorator` was spawned by my [Gist](https://gist.github.com/1523849) in
