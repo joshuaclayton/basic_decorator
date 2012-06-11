@@ -19,7 +19,7 @@ describe BasicDecorator::Decorator do
 
     class Cream < BasicDecorator::Decorator
       def cost
-        @component.cost + ::Money.new(75, 'USD')
+        @component.cost + Money.new(75, 'USD')
       end
 
       def additional_ingredients
@@ -29,7 +29,7 @@ describe BasicDecorator::Decorator do
 
     class Sugar < BasicDecorator::Decorator
       def cost
-        @component.cost + ::Money.new(25, 'USD')
+        @component.cost + Money.new(25, 'USD')
       end
 
       def additional_ingredients

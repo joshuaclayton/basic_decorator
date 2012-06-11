@@ -67,7 +67,7 @@ Fairly straightforward. Let's write up decorators for `Cream` and `Sugar`.
 ```ruby
 class Cream < BasicDecorator::Decorator
   def cost
-    @component.cost + ::Money.new(75, 'USD')
+    @component.cost + Money.new(75, 'USD')
   end
 
   def additional_ingredients
@@ -77,7 +77,7 @@ end
 
 class Sugar < BasicDecorator::Decorator
   def cost
-    @component.cost + ::Money.new(25, 'USD')
+    @component.cost + Money.new(25, 'USD')
   end
 
   def additional_ingredients
