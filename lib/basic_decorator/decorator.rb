@@ -1,5 +1,13 @@
 module BasicDecorator
-  class Decorator < BasicObject
+  unless defined?(::BasicObject)
+    class ::BasicObject
+      instance_methods.each do |m|
+        undef_method(m) if m.to_s !~ /(?:^__|^==$)/
+      end
+    end
+  end
+
+  class Decorator < ::BasicObject
     undef_method :==
 
     def initialize(component)
