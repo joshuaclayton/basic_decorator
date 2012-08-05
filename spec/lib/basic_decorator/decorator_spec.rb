@@ -53,6 +53,9 @@ describe BasicDecorator::Decorator do
       it { should respond_to(:cost) }
       it { should respond_to(:origin) }
       it { should respond_to(:additional_ingredients) }
+      it { expect { subject.method(:cost) }.to_not raise_error(NameError) }
+      it { expect { subject.method(:origin) }.to_not raise_error(NameError) }
+      it { expect { subject.method(:additional_ingredients) }.to_not raise_error(NameError) }
     end
   end
 
